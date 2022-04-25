@@ -41,6 +41,18 @@
         letter="Ed"
         v-bind:mounted="mounted"
       />
+      <InternalLink
+        path="contact"
+        idName="Contact"
+        letter="Co"
+        v-bind:mounted="mounted"
+      />
+      <InternalLink
+        path="qualifications"
+        idName="Qualifications"
+        letter="Qu"
+        v-bind:mounted="mounted"
+      />
     </nav>
   </div>
 </template>
@@ -84,11 +96,10 @@ export default defineComponent({
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
         )
-      ) {
+      )
         return true;
-      } else {
-        return false;
-      }
+
+      return false;
     },
   },
 });
@@ -205,6 +216,14 @@ a::after {
 
 #Education > .dot {
   background-color: #2ecc71;
+}
+
+#Contact > .dot {
+  background-color: #976a6a;
+}
+
+#Qualifications > .dot {
+  background-color: #f39c12;
 }
 
 .title {
