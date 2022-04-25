@@ -38,6 +38,16 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ContactView",
+  mounted: function () {
+    let items = document.querySelectorAll(
+      ".methods > .item"
+    ) as NodeListOf<HTMLElement>;
+    for (let i = 0; i < items.length; i++) {
+      setTimeout(() => {
+        items[i].style.visibility = "visible";
+      }, 7500 + 650 * i);
+    }
+  },
   methods: {
     call() {
       window.open("tel:+14255011802", "_self");
@@ -99,6 +109,7 @@ export default defineComponent({
   border-radius: 5px;
   background-color: rgb(49, 49, 49);
   cursor: pointer;
+  visibility: hidden;
 }
 
 .item > div {
