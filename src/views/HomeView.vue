@@ -66,15 +66,15 @@ export default defineComponent({
       let circles = CircleNav.querySelectorAll(
         ".CircleNav > a"
       ) as NodeListOf<HTMLElement>;
-      let angle = 360 - 90,
-        dangle = 360 / circles.length;
+      let angle = 360 - 90;
+      let dangle = 360 / circles.length;
+
       for (let i = 0; i < circles.length; ++i) {
         let circle = circles[i];
         angle += dangle;
-        circle.style.transform = `rotate(${angle}deg) translate(${
-          CircleNav.clientWidth / 2
-        }px) rotate(-${angle}deg)`;
+        circle.style.transform = `rotate(${angle}deg) translate(250px) rotate(-${angle}deg)`;
       }
+
       this.mounted = true;
     });
   },
