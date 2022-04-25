@@ -1,0 +1,22 @@
+:root {
+  --primary: #e6b594;
+  --secondary: #2b7caa;
+  --tertiary: #e7e7e7;
+  --background: #161616;
+}
+
+@font-face {
+  font-family: "mullish";
+  src: url("Mulish-VariableFont_wght.ttf");
+}
+
+#app {
+  font-family: mullish;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+}
