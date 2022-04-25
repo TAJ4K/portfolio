@@ -7,25 +7,25 @@
       class="Header"
     />
     <div class="methods">
-      <div class="item">
+      <div class="item" @click="call()">
         <div>Phone</div>
         <img
           src="https://img.icons8.com/material-outlined/24/000000/phone.png"
         />
       </div>
-      <div class="item" @click.prevent="call()">
+      <div class="item" @click="email('kobet12345@gmail.com')">
         <div>Email (Personal)</div>
         <img
           src="https://img.icons8.com/material-outlined/24/000000/new-post.png"
         />
       </div>
-      <div class="item">
+      <div class="item" @click="email('kobe@joltindustries.fish')">
         <div>Email (Work)</div>
         <img
           src="https://img.icons8.com/material-outlined/24/000000/new-post.png"
         />
       </div>
-      <div class="item">
+      <div class="item" @click="goto(`https://www.linkedin.com/in/jolt`)">
         <div>LinkedIn</div>
         <img src="https://img.icons8.com/ios/50/000000/linkedin.png" />
       </div>
@@ -40,7 +40,13 @@ export default defineComponent({
   name: "ContactView",
   methods: {
     call() {
-      window.open("tel:+1-425-501-1802");
+      window.open("tel:+14255011802", "_self");
+    },
+    email(email: string) {
+      window.open(`mailto:${email}`, "_self");
+    },
+    goto(link: string) {
+      window.open(link, "_blank");
     },
   },
 });
@@ -92,6 +98,7 @@ export default defineComponent({
   border: 1px solid rgb(152, 152, 152);
   border-radius: 5px;
   background-color: rgb(49, 49, 49);
+  cursor: pointer;
 }
 
 .item > div {
