@@ -139,6 +139,10 @@ export default defineComponent({
   color: black;
 }
 
+.dot > div {
+  text-shadow: black 0 0 0.4em;
+}
+
 .tooltiptext {
   visibility: hidden;
   background-color: rgb(14, 12, 12);
@@ -211,5 +215,6 @@ a::after {
   font-size: 2em;
   height: 500px;
   color: var(--primary);
+  text-shadow: black 0.1em 0.1em 0.1em;
 }
 </style>
