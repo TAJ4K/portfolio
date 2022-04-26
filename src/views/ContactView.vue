@@ -63,31 +63,8 @@ export default defineComponent({
 </script>
 
 <style>
-@keyframes blink {
-  49% {
-    background-color: rgb(0, 0, 0);
-  }
-  50% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
 .Header {
-  display: flex;
-  justify-content: center;
   margin-top: 10%;
-  color: var(--primary);
-  font-size: 3em;
-}
-
-.is-typed span.cursor {
-  display: inline-block;
-  width: 0.25em;
-  background-color: rgb(0, 0, 0);
-  animation: blink 1s linear 0s 15 normal forwards;
 }
 
 .methods {

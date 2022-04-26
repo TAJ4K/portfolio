@@ -188,12 +188,6 @@ export default defineComponent({
   visibility: visible;
 }
 
-a,
-a:link,
-a::after {
-  text-decoration: none;
-}
-
 #GitHub > .dot {
   background-color: #e74c3c;
 }
