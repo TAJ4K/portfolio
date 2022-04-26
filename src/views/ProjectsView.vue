@@ -14,12 +14,8 @@
           Uses Go and hardware bindings to add Text To Speech for images to help
           visually impaired navigate the web easier.
         </div>
-        <a
-          href="https://github.com/TAJ4K/sables"
-          target="_blank"
-          class="projectLink"
-        >
-          View on Github🔗
+        <a href="https://sables.tech" target="_blank" class="projectLink">
+          View Website🔗
         </a>
       </div>
       <div class="flexItem">
@@ -94,7 +90,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 .Header {
   margin-top: 5%;
 }

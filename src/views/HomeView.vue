@@ -105,7 +105,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style local>
 .home {
   display: flex;
   justify-content: center;
@@ -129,7 +129,7 @@ export default defineComponent({
 }
 
 .CircleNav > a > div:hover {
-  box-shadow: 0 0 10px 5px rgba(76, 136, 74, 0.3);
+  box-shadow: 0 0 10px 1px var(--primary);
   transform: scale(1.1);
 }
 
@@ -219,7 +219,9 @@ export default defineComponent({
 #Qualifications > .dot {
   background-color: #f39c12;
 }
+</style>
 
+<style scoped>
 .title {
   display: flex;
   flex-direction: column;
