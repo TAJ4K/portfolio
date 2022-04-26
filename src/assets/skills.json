@@ -1,0 +1,27 @@
+{
+  "skills": [
+    ["JavaScript", 5],
+    ["HTML", 5],
+    ["CSS", 4],
+    ["Python", 4],
+    ["Go", 5],
+    ["C#", 3],
+    ["C", 1],
+    ["Java", 2],
+    ["C++", 1],
+    ["Websockets", 4],
+    ["Application Security", 4],
+    ["JSON", 4],
+    ["DSA", 2],
+    ["Vue", 4],
+    ["React", 2],
+    ["Python Datascience", 2],
+    ["V", 4],
+    ["Unity", 2],
+    ["ExpressJS", 3],
+    ["Heroku", 4],
+    ["Selenium", 4],
+    ["Puppeteer", 5],
+    ["Playwright", 5]
+  ]
+}

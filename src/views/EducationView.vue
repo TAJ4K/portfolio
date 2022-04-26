@@ -36,6 +36,10 @@
   margin-bottom: 1em;
 }
 
+.title {
+  word-wrap: break-word;
+}
+
 .location {
   font-size: 1.1em;
   color: rgb(152, 152, 152);
@@ -45,6 +49,14 @@
   font-size: 2.2em;
   font-weight: bold;
   color: var(--tertiary);
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--tertiary);
+  margin-bottom: 0.2em;
 }
 .subtitle {
   font-size: 1.3em;
