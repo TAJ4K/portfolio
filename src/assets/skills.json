@@ -20,8 +20,13 @@
     ["Unity", 2],
     ["ExpressJS", 3],
     ["Heroku", 4],
-    ["Selenium", 4],
+    ["Selenium", 3],
     ["Puppeteer", 5],
-    ["Playwright", 5]
+    ["Playwright", 5],
+    ["TypeScript", 5],
+    ["Rust", 1],
+    ["Ruby", 1],
+    ["OOP JS", 3],
+    ["IMAP", 3]
   ]
 }
