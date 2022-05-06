@@ -110,8 +110,8 @@ export default defineComponent({
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 18em;
-  height: 12em;
+  min-width: 18em;
+  min-height: 12em;
   border: 1px solid rgb(152, 152, 152);
   border-radius: 5px;
   background-color: rgb(49, 49, 49);

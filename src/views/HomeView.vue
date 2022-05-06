@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <nav :class="{ CircleNav: !isMobile() }">
+    <nav :class="{ CircleNav: !mobile, MobileStyle: mobile }">
       <div class="title">
         <div>Kobe Rankich</div>
         <div>Software Developer</div>
@@ -71,6 +71,7 @@ export default defineComponent({
   data() {
     return {
       mounted: false,
+      mobile: false,
     };
   },
   mounted: function () {
@@ -89,6 +90,7 @@ export default defineComponent({
 
       this.mounted = true;
     });
+    this.isMobile();
   },
   methods: {
     isMobile() {
@@ -97,9 +99,7 @@ export default defineComponent({
           navigator.userAgent
         )
       )
-        return true;
-
-      return false;
+        this.mobile = true;
     },
   },
 });
@@ -126,5 +126,23 @@ export default defineComponent({
   height: 500px;
   color: var(--primary);
   text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.MobileStyle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.MobileStyle > a {
+  position: relative !important;
+  left: auto;
+  margin: auto;
+}
+
+.MobileStyle > .title {
+  height: 10rem;
+  width: 100%;
 }
 </style>

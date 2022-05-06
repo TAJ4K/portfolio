@@ -49,12 +49,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 15em;
-  height: 12em;
+  min-width: 15em;
+  min-height: 12em;
   border: 1px solid rgb(152, 152, 152);
   border-radius: 5px;
   background-color: rgb(49, 49, 49);
   padding: 0.5em;
+  flex: 0 0 20%;
 }
 
 .itemTitle {
